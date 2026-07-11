@@ -87,7 +87,7 @@ const Hero = () => {
     </Title>
 
     <Subtitle>
-      Senior Full Stack Developer
+      Senior Software Engineer
     </Subtitle>
 
     <Description>

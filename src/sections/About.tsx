@@ -116,7 +116,7 @@ const About = () => {
         <TechCarousel />
 
         <p>
-            I'm a <Highlight>Senior Full Stack Developer, </Highlight>
+            I'm a <Highlight>Senior Software Engineer</Highlight>,
             with experience building scalable web applications,
             cloud infrastructure, and AI-powered solutions.
         </p>
