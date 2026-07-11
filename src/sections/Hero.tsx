@@ -112,7 +112,7 @@ const Hero = () => {
     </SecondaryButton>
 
 
-    <SecondaryButton href="/vinicius_resume.pdf" target="_blank">
+    <SecondaryButton href="https://vinigonz1993.github.io/portfolio/vinicius_resume.pdf" target="_blank">
       Resume
     </SecondaryButton>
 
