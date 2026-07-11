@@ -97,12 +97,12 @@ const Hero = () => {
 
     <Actions>
 
-    <Button
+    <SecondaryButton
       href="https://github.com/vinigonz1993"
       target="_blank"
     >
     <FaGithub />
-    </Button>
+    </SecondaryButton>
 
     <SecondaryButton
       href="https://www.linkedin.com/in/vin%C3%ADcius-gonzalez-caetano-06943044/"
