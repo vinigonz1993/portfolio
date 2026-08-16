@@ -72,6 +72,10 @@ const Navbar = () => {
         Experience
         </Link>
 
+        <Link href="#projects">
+        Projects
+        </Link>
+
         <Link href="#skills">
         Skills
         </Link>

@@ -116,28 +116,29 @@ const About = () => {
         <TechCarousel />
 
         <p>
-            I'm a <Highlight>Senior Software Engineer</Highlight>,
-            with experience building scalable web applications,
-            cloud infrastructure, and AI-powered solutions.
+        I'm a <Highlight>Senior Software Engineer</Highlight> with{" "}
+        {new Date().getFullYear() - 2019}+ years of experience building production
+        software, scalable web applications, cloud infrastructure, and
+        developer-focused tools.
         </p>
 
         <br />
 
         <p>
-            My main focus is backend development with
-            <Highlight> Python and Django</Highlight>,
-            combined with modern frontend applications using
-            <Highlight> React and TypeScript</Highlight>.
+        My core stack is <Highlight>Python, Django, React, and TypeScript</Highlight>.
+        I also work extensively with <Highlight>AWS, Docker, PostgreSQL, and Linux</Highlight>,
+        and have experience building and maintaining <Highlight>Node.js and Express</Highlight>
+        services backed by both relational databases and <Highlight>MongoDB</Highlight>.
         </p>
-
 
         <br />
 
-
         <p>
-            I enjoy designing reliable systems, improving
-            developer workflows, and solving complex problems
-            through clean architecture and automation.
+        I enjoy solving complex technical problems and building software that is
+        reliable and easy to maintain. My experience includes
+        <Highlight>third-party API integrations</Highlight>,
+        backend architecture, <Highlight>unit and integration testing</Highlight>,
+        and development automation.
         </p>
 
         </Content>

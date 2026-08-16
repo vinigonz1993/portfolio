@@ -6,6 +6,7 @@ import {
   SiTypescript,
   SiJavascript,
   SiPostgresql,
+  SiMongodb,
   SiRedis,
   SiDocker,
   SiKubernetes,
@@ -56,6 +57,11 @@ export const technologies = [
         name: "PostgreSQL",
         category: "Database",
         icon: SiPostgresql,
+    },
+    {
+        name: "MongoDB",
+        category: "Database",
+        icon: SiMongodb,
     },
     {
         name: "Redis",
