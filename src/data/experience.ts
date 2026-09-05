@@ -2,7 +2,7 @@ export const experiences = [
   {
     period: "2023 - Present",
     role: "Senior Software Engineer",
-    sector: "Healthcare Technology",
+    sector: "Ottawa Memory Clinic",
     description: [
         "Built and maintained a healthcare platform using Django, React and TypeScript.",
         "Designed scalable REST APIs and integrations with external healthcare systems.",
@@ -27,7 +27,7 @@ export const experiences = [
   {
     period: "2019 - 2023",
     role: "Software Developer",
-    sector: "HR Technology",
+    sector: "Arbache Innovations",
     description: [
         "Developed python backend services and js/ts frontend applications.",
         "Designed and maintained APIs and database solutions.",
