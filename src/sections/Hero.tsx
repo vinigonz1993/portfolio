@@ -127,7 +127,7 @@ const Hero = () => {
 
     <Description>
       I build scalable web applications using
-      Python, Django, React, AWS and AI.
+      Python, Django, TypeScript, React, AWS and AI.
     </Description>
 
     <Actions>
