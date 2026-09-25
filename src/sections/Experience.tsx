@@ -7,52 +7,48 @@ import Card from "../utils/Card";
 
 const Timeline = styled.div`
     position:relative;
-    margin:auto;
+    max-width: 880px;
+    margin: auto;
     &::before{
         content:"";
         position:absolute;
-        top:0;
-        bottom:0;
-        width:2px;
+        top: 0.5rem;
+        bottom: 2.5rem;
+        left: 7px;
+        width: 1px;
         background:${({theme})=>theme.colors.border};
-        transform:translateX(-50%);
     }
 
     @media(max-width:768px){
         &::before{
-            left:20px;
+            left: 7px;
         }
     }
 `;
 
 const TimelineItem = styled.div`
     position:relative;
-    padding:0 3rem 3rem;
+    padding: 0 0 1.5rem 2.5rem;
 
     @media(max-width:768px){
         width:100%;
-        left:0 !important;
-        padding-left:4rem;
-        padding-right:0;
-        text-align:left !important;
+        padding-left: 2.5rem;
+        padding-right: 0;
+        text-align: left;
     }
 `;
 
 
 const Dot = styled.div`
     position:absolute;
-    top:0;
-    width:18px;
-    height:18px;
+    top: 0.6rem;
+    left: 0;
+    width: 15px;
+    height: 15px;
     border-radius:50%;
     background:${({theme})=>theme.colors.primary};
-    border:4px solid ${({theme})=>theme.colors.background};
-    left: -9px;
-
-    @media(max-width:768px){
-        left:11px !important;
-        right:auto;
-    }
+    border: 4px solid ${({theme})=>theme.colors.background};
+    box-shadow: 0 0 0 1px ${({theme})=>theme.colors.primary};
 `;
 
 const Period = styled.span`
@@ -84,8 +80,8 @@ const Tags = styled.div`
 `;
 
 const Tag = styled.span`
-    padding:0.3rem 0.8rem;
-    border-radius:20px;
+    padding:0.25rem 0.65rem;
+    border-radius:${({theme})=>theme.radius.sm};
     background:${({theme})=>theme.colors.background};
     border:1px solid ${({theme})=>theme.colors.border};
     font-size:0.85rem;

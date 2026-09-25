@@ -1,11 +1,12 @@
 const theme = {
   colors: {
-    background: "#0b1220",
-    surface: "#111c2f",
-    primary: "#38bdf8",
-    text: "#f1f5f9",
-    textSecondary: "#94a3b8",
-    border: "#22314d",
+    background: "#f5f7f4",
+    surface: "#ffffff",
+    primary: "#147d70",
+    text: "#172522",
+    textSecondary: "#5d6e69",
+    border: "#dce5df",
+    accent: "#d6a64f",
   },
 
   spacing: {
@@ -18,11 +19,11 @@ const theme = {
 
   radius: {
     sm: "6px",
-    md: "10px",
-    lg: "16px",
+    md: "8px",
+    lg: "12px",
   },
 
-  maxWidth: "1100px",
+  maxWidth: "1120px",
 };
 
 export default theme;

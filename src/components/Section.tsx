@@ -3,8 +3,9 @@ import styled from "styled-components";
 const Wrapper = styled.section`
   max-width: ${({theme}) => theme.maxWidth};
   margin: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: clamp(1.25rem, 5vw, 3rem);
+  padding-right: clamp(1.25rem, 5vw, 3rem);
+  width: 100%;
 `;
 
 interface Props {

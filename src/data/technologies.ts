@@ -15,7 +15,9 @@ import {
   SiGit,
   SiGithub,
   SiNginx,
-  SiTerraform
+  SiTerraform,
+  SiExpress,
+  SiNestjs
 } from "react-icons/si";
 import {
     FaAws
@@ -39,6 +41,11 @@ export const technologies = [
         icon: SiTsnode,
     },
     {
+        name: "Express.js",
+        category: "Backend",
+        icon: SiExpress,
+    },
+    {
         name: "React",
         category: "Frontend",
         icon: SiReact,
@@ -52,6 +59,11 @@ export const technologies = [
         name: "JavaScript",
         category: "Frontend",
         icon: SiJavascript,
+    },
+    {
+        name: "NestJS",
+        category: "Backend",
+        icon: SiNestjs,
     },
     {
         name: "PostgreSQL",

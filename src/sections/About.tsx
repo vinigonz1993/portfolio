@@ -127,7 +127,7 @@ const About = () => {
         <p>
         My core stack is <Highlight>Python, Django, React, and TypeScript</Highlight>.
         I also work extensively with <Highlight>AWS, Docker, PostgreSQL, and Linux</Highlight>,
-        and have experience building and maintaining <Highlight>Node.js and Express</Highlight>
+        and have experience building and maintaining <Highlight>Node.js, NestJS and Express </Highlight>
         services backed by both relational databases and <Highlight>MongoDB</Highlight>.
         </p>
 

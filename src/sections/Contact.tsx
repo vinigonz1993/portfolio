@@ -34,6 +34,13 @@ const ContactButton = styled(Button)`
 const SecondaryButton = styled(ContactButton)`
     background:transparent;
     border:1px solid ${({theme})=>theme.colors.border};
+    color: ${({theme})=>theme.colors.text};
+
+    &:hover {
+        background: ${({theme})=>theme.colors.surface};
+        border-color: ${({theme})=>theme.colors.primary};
+        filter: none;
+    }
 `;
 
 const Contact = () => {
@@ -59,6 +66,7 @@ const Contact = () => {
                 <SecondaryButton
                     href="https://www.linkedin.com/in/vin%C3%ADcius-gonzalez-caetano-06943044/"
                     target="_blank"
+                    rel="noreferrer"
                 >
                 <FaLinkedin />LinkedIn
                 </SecondaryButton>
@@ -66,6 +74,7 @@ const Contact = () => {
                 <SecondaryButton
                     href="https://github.com/vinigonz1993"
                     target="_blank"
+                    rel="noreferrer"
                 >
                 <FaGithub />GitHub
                 </SecondaryButton>

@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
 html {
   scroll-behavior: smooth;
   background: ${({theme}) => theme.colors.background};
+  scroll-padding-top: 6rem;
 }
 
 
@@ -21,16 +22,9 @@ body {
 
   color: ${({theme}) => theme.colors.text};
 
-  font-family:
-    Inter,
-    "SF Pro Display",
-    "SF Pro Text",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
 
-  line-height: 1.6;
+  line-height: 1.7;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -83,7 +77,9 @@ h4 {
 
   line-height: 1.2;
 
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+  font-family: "Manrope", "DM Sans", "Segoe UI", sans-serif;
+  color: ${({theme}) => theme.colors.text};
 
 }
 
@@ -96,18 +92,14 @@ p {
 
 
 section {
-
-  padding: 6rem 0;
-
+  padding: 5.5rem 0;
 }
 
 
 @media(max-width:768px){
 
   section {
-
     padding: 4rem 0;
-
   }
 
 }
@@ -140,6 +132,15 @@ section {
 
   background: ${({theme}) => theme.colors.primary};
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 `;

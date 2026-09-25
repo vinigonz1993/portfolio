@@ -23,10 +23,14 @@ transition:0.2s;
 
 cursor:pointer;
 
+&:focus-visible {
+  outline: 3px solid ${({theme})=>theme.colors.primary};
+  outline-offset: 3px;
+}
 
 &:hover{
   transform:translateY(-2px);
-  opacity:0.9;
+  filter: brightness(0.95);
 }
 
 `;

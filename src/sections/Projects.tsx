@@ -33,26 +33,27 @@ const Col = styled.div<ColProps>`
   }
 `;
 
+const Preview = styled.div`
+  overflow: hidden;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  border-radius: ${({ theme }) => theme.radius.md};
+  background: ${({ theme }) => theme.colors.background};
+`;
+
 const ProjectName = styled.h3`
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
 `;
 
 const ProjectImage = styled.img`
-width: 100%;
-height: auto;
-max-height: 260px;
-object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.35s ease;
 
-border-radius: ${({ theme }) => theme.radius.md};
-border: 1px solid ${({ theme }) => theme.colors.border};
-
-&:hover {
-    transition: 0.375s;
-    transform: scale(1.1);
-}
-
-transition: 0.2s;
+  ${Preview}:hover & {
+    transform: scale(1.025);
+  }
 `;
 
 const Description = styled.p`
@@ -88,7 +89,9 @@ const Projects = () => {
           return (
             <Row key={project.name}>
               <Col $order={isEven ? 2 : 1}>
-                <ProjectImage src={project.image} alt={`${project.name} preview`} />
+                <Preview>
+                  <ProjectImage src={project.image} alt={`${project.name} preview`} />
+                </Preview>
               </Col>
 
               <Col $order={isEven ? 1 : 2}>
