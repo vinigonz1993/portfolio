@@ -2,12 +2,14 @@ import vpslensImage from "../assets/vpslens.png";
 import tracevaultImage from "../assets/tracevault.png";
 import mindtestImage from "../assets/mindtest.png";
 import seahorseImage from "../assets/seahorse.png";
+import shrinkPdfImage from "../assets/shrinkpdf.png";
 
 export interface Project {
   name: string;
   description: string;
   technologies: string[];
   image: string;
+  url: string | null;
 }
 
 export const projects: Project[] = [
@@ -29,6 +31,7 @@ export const projects: Project[] = [
       "Terraform"
     ],
     image: mindtestImage,
+    url: "https://pro.mindtest.com.br"
   },
   {
     name: "Seahorse",
@@ -50,6 +53,7 @@ export const projects: Project[] = [
       "Terraform",
     ],
     image: seahorseImage,
+    url: null
   },
   {
     name: "Tracevault",
@@ -65,6 +69,19 @@ export const projects: Project[] = [
       "SSR",
     ],
     image: tracevaultImage,
+    url: null
+  },
+  {
+    name: "Shrink-pdf",
+    description:
+      "Shrink-pdf is a lightweight tool for compressing PDF files, optimizing file size while maintaining document quality. It provides a simple web interface for uploading, processing, and downloading compressed PDFs efficiently.",
+    technologies: [
+      "TypeScript",
+      "Node.js",
+      "React",
+    ],
+    image: shrinkPdfImage,
+    url: "https://shrink-pdf.vgonzalez.dev"
   },
   {
     name: "VPSLens",
@@ -79,5 +96,6 @@ export const projects: Project[] = [
       "Electron",
     ],
     image: vpslensImage,
+    url: null
   },
 ];

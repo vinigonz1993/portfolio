@@ -1,5 +1,7 @@
 import styled from "styled-components";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Section from "../components/Section";
+import { Button } from "../components/Button";
 import Title from "../utils/Title";
 import Card from "../utils/Card";
 import { projects } from "../data/projects";
@@ -58,14 +60,30 @@ const ProjectImage = styled.img`
 
 const Description = styled.p`
   color: ${({ theme }) => theme.colors.textSecondary};
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+`;
+
+const ProjectButton = styled(Button)`
+  gap: 0.65rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.7rem;
+  box-shadow: 0 8px 18px rgba(20, 125, 112, 0.16);
+
+  svg {
+    font-size: 0.8rem;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover svg {
+    transform: translate(2px, -2px);
+  }
 `;
 
 const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.4rem;
+  margin-top: 1.4rem;
 `;
 
 const Tag = styled.span`
@@ -97,6 +115,12 @@ const Projects = () => {
               <Col $order={isEven ? 1 : 2}>
                 <ProjectName>{project.name}</ProjectName>
                 <Description>{project.description}</Description>
+
+                {project.url && (
+                  <ProjectButton href={project.url} target="_blank" rel="noopener noreferrer">
+                    View Project <FaArrowUpRightFromSquare aria-hidden="true" />
+                  </ProjectButton>
+                )}
 
                 <Tags>
                   {project.technologies.map((tech) => (
