@@ -17,7 +17,8 @@ import {
   SiNginx,
   SiTerraform,
   SiExpress,
-  SiNestjs
+  SiNestjs,
+  SiCelery,
 } from "react-icons/si";
 import {
     FaAws
@@ -99,6 +100,11 @@ export const technologies = [
         name: "RabbitMQ",
         category: "Backend",
         icon: SiRabbitmq,
+    },
+    {
+        name: "Celery",
+        category: "Backend",
+        icon: SiCelery,
     },
     {
         name: "Git",

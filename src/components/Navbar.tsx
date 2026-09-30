@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import logo from "../assets/vinicius-gonzalez-logo.png";
 
 const Nav = styled.nav`
   position: sticky;
@@ -30,14 +31,17 @@ const Container = styled.div`
 `;
 
 const Logo = styled.a`
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0;
+  display: inline-flex;
+  align-items: center;
 
-  color: ${({ theme }) => theme.colors.text};
+  img {
+    display: block;
+    width: 280px;
+    height: auto;
 
-  span {
-    color: ${({ theme }) => theme.colors.primary};
+    @media (max-width: 768px) {
+      width: 220px;
+    }
   }
 
   &:focus-visible {
@@ -104,8 +108,8 @@ const Navbar = () => {
   return (
     <Nav>
       <Container>
-      <Logo href="#">
-        Vinicius <span>Gonzalez</span>
+      <Logo href="#" aria-label="Vinicius Gonzalez home">
+        <img src={logo} alt="Vinicius Gonzalez" />
       </Logo>
 
       <Links>
