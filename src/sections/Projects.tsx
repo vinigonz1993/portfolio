@@ -108,7 +108,12 @@ const Projects = () => {
             <Row key={project.name}>
               <Col $order={isEven ? 2 : 1}>
                 <Preview>
-                  <ProjectImage src={project.image} alt={`${project.name} preview`} />
+                  <ProjectImage
+                    src={project.image}
+                    alt={`Screenshot of the ${project.name} project interface`}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </Preview>
               </Col>
 
@@ -118,7 +123,7 @@ const Projects = () => {
 
                 {project.url && (
                   <ProjectButton href={project.url} target="_blank" rel="noopener noreferrer">
-                    View Project <FaArrowUpRightFromSquare aria-hidden="true" />
+                    View {project.name} project <FaArrowUpRightFromSquare aria-hidden="true" />
                   </ProjectButton>
                 )}
 

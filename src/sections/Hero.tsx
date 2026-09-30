@@ -68,11 +68,14 @@ const Title = styled.h1`
   margin-bottom: 1.25rem;
   letter-spacing: 0;
   span{
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.56em;
     color:${({theme})=>theme.colors.primary};
   }
 `;
 
-const Subtitle = styled.h2`
+const Subtitle = styled.p`
   color:${({theme})=>theme.colors.textSecondary};
   font-weight:500;
   font-size: clamp(1.2rem, 2.4vw, 1.6rem);
@@ -116,18 +119,19 @@ const Hero = () => {
     <Section>
     <Wrapper>
     <Content>
-    <Eyebrow>Senior software engineer · Open to meaningful work</Eyebrow>
+    <Eyebrow>Ottawa-based senior software engineer · Open to meaningful work</Eyebrow>
     <Title>
-      Hi, I'm <span>Vinicius Gonzalez</span>
+      Vinicius Gonzalez
+      <span>Senior Software Engineer</span>
     </Title>
 
     <Subtitle>
-      Senior Software Engineer
+      Full-stack development · Cloud infrastructure
     </Subtitle>
 
     <Description>
-      I build scalable web applications using
-      Python, Django, TypeScript, React, AWS and AI.
+      I build scalable full-stack applications and cloud infrastructure with
+      Python, Django, TypeScript, React, Next.js, AWS, Kubernetes, Docker, and PostgreSQL.
     </Description>
 
     <Actions>
@@ -166,7 +170,8 @@ const Hero = () => {
 
     <ProfileImage
     src={profile}
-    alt="Vinicius Gonzalez"
+    alt="Portrait of Vinicius Gonzalez, Senior Software Engineer"
+    fetchPriority="high"
     />
 
 

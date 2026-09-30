@@ -109,7 +109,7 @@ const Navbar = () => {
     <Nav>
       <Container>
       <Logo href="#" aria-label="Vinicius Gonzalez home">
-        <img src={logo} alt="Vinicius Gonzalez" />
+        <img src={logo} alt="" />
       </Logo>
 
       <Links>
