@@ -1,6 +1,33 @@
 export const experiences = [
   {
-    period: "2023 - Present",
+    period: "September 2026 - Present",
+    role: "Senior Software Engineer",
+    sector: "GeneRxN",
+    description: [
+      "Designed and developed scalable backend APIs using Python, Django, and Django REST Framework, with comprehensive unit testing and a strong focus on reliability, maintainability, and code quality.",
+      "Designed and maintained asynchronous distributed workloads using Celery, Celery Beat, RabbitMQ, and PostgreSQL, supporting background processing and scheduled business operations.",
+      "Built and maintained modern React and TypeScript applications, developing reusable interfaces and integrating them with backend APIs.",
+      "Designed, provisioned, and manageed AWS cloud infrastructure using Terraform, including containerized workloads deployed to Amazon EKS (Kubernetes).",
+      "Built and maintained CI/CD pipelines with GitHub Actions, Docker, Amazon ECR, and AWS, automating application builds, testing, and production deployments.",
+      "Developed internal Node.js, Express.js, and NestJS services for operational tooling, monitoring, and integration with production systems and databases.",
+      "Worked with PostgreSQL and Amazon RDS, developing data access layers, operational tooling, and database integrations for production applications.",
+      "Implemented containerized application environments using Docker, with Nginx reverse-proxy configurations and production deployment workflows.",
+    ],
+    technologies: [
+        "Python",
+        "Django / DRF",
+        "React",
+        "TypeScript",
+        "AWS",
+        "Terraform",
+        "Kubernetes",
+        "Docker",
+        "CI/CD",
+        "AI",
+    ],
+  },
+  {
+    period: "May 2023 - August 2026",
     role: "Senior Software Engineer",
     sector: "Ottawa Memory Clinic",
     description: [
@@ -25,7 +52,7 @@ export const experiences = [
     ],
   },
   {
-    period: "2019 - 2023",
+    period: "January 2019 - April 2023",
     role: "Software Developer",
     sector: "Arbache Innovations",
     description: [
