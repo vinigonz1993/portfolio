@@ -266,7 +266,7 @@ Error generating stack: `+e.message+`
     color: ${({theme:e})=>e.colors.surface};
     background: ${({theme:e})=>e.colors.primary};
   }
-`,hi=()=>(0,P.jsx)(li,{children:(0,P.jsxs)(ui,{children:[(0,P.jsx)(di,{href:`#`,"aria-label":`Vinicius Gonzalez home`,children:(0,P.jsx)(`img`,{src:ci,alt:`Vinicius Gonzalez`})}),(0,P.jsxs)(fi,{children:[(0,P.jsx)(pi,{href:`#about`,children:`About`}),(0,P.jsx)(pi,{href:`#experience`,children:`Experience`}),(0,P.jsx)(pi,{href:`#projects`,children:`Projects`}),(0,P.jsx)(pi,{href:`#skills`,children:`Skills`}),(0,P.jsx)(pi,{href:`#contact`,children:`Contact`})]}),(0,P.jsx)(mi,{href:`mailto:vinigonzalez1993@gmail.com`,children:`Let's talk`})]})}),gi=N.div`
+`,hi=()=>(0,P.jsx)(li,{children:(0,P.jsxs)(ui,{children:[(0,P.jsx)(di,{href:`#`,"aria-label":`Vinicius Gonzalez home`,children:(0,P.jsx)(`img`,{src:ci,alt:``})}),(0,P.jsxs)(fi,{children:[(0,P.jsx)(pi,{href:`#about`,children:`About`}),(0,P.jsx)(pi,{href:`#experience`,children:`Experience`}),(0,P.jsx)(pi,{href:`#projects`,children:`Projects`}),(0,P.jsx)(pi,{href:`#skills`,children:`Skills`}),(0,P.jsx)(pi,{href:`#contact`,children:`Contact`})]}),(0,P.jsx)(mi,{href:`mailto:vinigonzalez1993@gmail.com`,children:`Let's talk`})]})}),gi=N.div`
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     gap:2rem;
@@ -397,7 +397,7 @@ cursor:pointer;
   border: 1px solid ${({theme:e})=>e.colors.border};
   font-size: 0.85rem;
   color: ${({theme:e})=>e.colors.textSecondary};
-`,Pi=()=>(0,P.jsxs)(Xn,{id:`projects`,children:[(0,P.jsx)(Hr,{children:`Projects`}),(0,P.jsx)(wi,{children:Ci.map((e,t)=>{let n=(t+1)%2==0;return(0,P.jsxs)(Ti,{children:[(0,P.jsx)(Ei,{$order:n?2:1,children:(0,P.jsx)(Di,{children:(0,P.jsx)(ki,{src:e.image,alt:`${e.name} preview`})})}),(0,P.jsxs)(Ei,{$order:n?1:2,children:[(0,P.jsx)(Oi,{children:e.name}),(0,P.jsx)(Ai,{children:e.description}),e.url&&(0,P.jsxs)(ji,{href:e.url,target:`_blank`,rel:`noopener noreferrer`,children:[`View Project `,(0,P.jsx)(xi,{"aria-hidden":`true`})]}),(0,P.jsx)(Mi,{children:e.technologies.map(e=>(0,P.jsx)(Ni,{children:e},e))})]})]},e.name)})})]}),Fi=`/assets/profile-D4pX45_L.jpg`,Ii=N.div`
+`,Pi=()=>(0,P.jsxs)(Xn,{id:`projects`,children:[(0,P.jsx)(Hr,{children:`Projects`}),(0,P.jsx)(wi,{children:Ci.map((e,t)=>{let n=(t+1)%2==0;return(0,P.jsxs)(Ti,{children:[(0,P.jsx)(Ei,{$order:n?2:1,children:(0,P.jsx)(Di,{children:(0,P.jsx)(ki,{src:e.image,alt:`Screenshot of the ${e.name} project interface`,loading:`lazy`,decoding:`async`})})}),(0,P.jsxs)(Ei,{$order:n?1:2,children:[(0,P.jsx)(Oi,{children:e.name}),(0,P.jsx)(Ai,{children:e.description}),e.url&&(0,P.jsxs)(ji,{href:e.url,target:`_blank`,rel:`noopener noreferrer`,children:[`View `,e.name,` project `,(0,P.jsx)(xi,{"aria-hidden":`true`})]}),(0,P.jsx)(Mi,{children:e.technologies.map(e=>(0,P.jsx)(Ni,{children:e},e))})]})]},e.name)})})]}),Fi=`/assets/profile-D4pX45_L.jpg`,Ii=N.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -452,9 +452,12 @@ cursor:pointer;
   margin-bottom: 1.25rem;
   letter-spacing: 0;
   span{
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.56em;
     color:${({theme:e})=>e.colors.primary};
   }
-`,zi=N.h2`
+`,zi=N.p`
   color:${({theme:e})=>e.colors.textSecondary};
   font-weight:500;
   font-size: clamp(1.2rem, 2.4vw, 1.6rem);
@@ -484,7 +487,7 @@ cursor:pointer;
     border-color: ${({theme:e})=>e.colors.primary};
     filter: none;
   }
-`,Ui=()=>(0,P.jsx)(Xn,{children:(0,P.jsxs)(Ii,{children:[(0,P.jsxs)(I,{children:[(0,P.jsx)(L,{children:`Senior software engineer · Open to meaningful work`}),(0,P.jsxs)(Ri,{children:[`Hi, I'm `,(0,P.jsx)(`span`,{children:`Vinicius Gonzalez`})]}),(0,P.jsx)(zi,{children:`Senior Software Engineer`}),(0,P.jsx)(Bi,{children:`I build scalable web applications using Python, Django, TypeScript, React, AWS and AI.`}),(0,P.jsxs)(Vi,{children:[(0,P.jsx)(Si,{href:`mailto:vinigonzalez1993@gmail.com`,children:`Let's talk`}),(0,P.jsx)(Hi,{href:`https://github.com/vinigonz1993`,target:`_blank`,rel:`noreferrer`,"aria-label":`GitHub profile`,children:(0,P.jsx)(dr,{})}),(0,P.jsx)(Hi,{href:`https://www.linkedin.com/in/vin%C3%ADcius-gonzalez-caetano-06943044/`,target:`_blank`,rel:`noreferrer`,"aria-label":`LinkedIn profile`,children:(0,P.jsx)(ur,{})}),(0,P.jsx)(Hi,{href:`https://vinigonz1993.github.io/portfolio/vinicius_resume.pdf`,target:`_blank`,rel:`noreferrer`,children:`Resume`})]})]}),(0,P.jsx)(Li,{src:Fi,alt:`Vinicius Gonzalez`})]})}),Wi=N.div`
+`,Ui=()=>(0,P.jsx)(Xn,{children:(0,P.jsxs)(Ii,{children:[(0,P.jsxs)(I,{children:[(0,P.jsx)(L,{children:`Ottawa-based senior software engineer · Open to meaningful work`}),(0,P.jsxs)(Ri,{children:[`Vinicius Gonzalez`,(0,P.jsx)(`span`,{children:`Senior Software Engineer`})]}),(0,P.jsx)(zi,{children:`Full-stack development · Cloud infrastructure`}),(0,P.jsx)(Bi,{children:`I build scalable full-stack applications and cloud infrastructure with Python, Django, TypeScript, React, Next.js, AWS, Kubernetes, Docker, and PostgreSQL.`}),(0,P.jsxs)(Vi,{children:[(0,P.jsx)(Si,{href:`mailto:vinigonzalez1993@gmail.com`,children:`Let's talk`}),(0,P.jsx)(Hi,{href:`https://github.com/vinigonz1993`,target:`_blank`,rel:`noreferrer`,"aria-label":`GitHub profile`,children:(0,P.jsx)(dr,{})}),(0,P.jsx)(Hi,{href:`https://www.linkedin.com/in/vin%C3%ADcius-gonzalez-caetano-06943044/`,target:`_blank`,rel:`noreferrer`,"aria-label":`LinkedIn profile`,children:(0,P.jsx)(ur,{})}),(0,P.jsx)(Hi,{href:`https://vinigonz1993.github.io/portfolio/vinicius_resume.pdf`,target:`_blank`,rel:`noreferrer`,children:`Resume`})]})]}),(0,P.jsx)(Li,{src:Fi,alt:`Portrait of Vinicius Gonzalez, Senior Software Engineer`,fetchPriority:`high`})]})}),Wi=N.div`
     text-align:center;
     max-width:700px;
     margin:auto;
@@ -512,7 +515,7 @@ cursor:pointer;
         border-color: ${({theme:e})=>e.colors.primary};
         filter: none;
     }
-`,Yi=()=>(0,P.jsx)(Xn,{id:`contact`,children:(0,P.jsxs)(Wi,{children:[(0,P.jsx)(Hr,{children:`Let's Connect`}),(0,P.jsx)(Gi,{children:`I'm always interested in discussing new opportunities, interesting projects, and challenging engineering problems.`}),(0,P.jsxs)(Ki,{children:[(0,P.jsxs)(qi,{href:`mailto:vinigonzalez1993@gmail.com`,children:[(0,P.jsx)(pr,{}),` Email Me`]}),(0,P.jsxs)(Ji,{href:`https://www.linkedin.com/in/vin%C3%ADcius-gonzalez-caetano-06943044/`,target:`_blank`,rel:`noreferrer`,children:[(0,P.jsx)(ur,{}),`LinkedIn`]}),(0,P.jsxs)(Ji,{href:`https://github.com/vinigonz1993`,target:`_blank`,rel:`noreferrer`,children:[(0,P.jsx)(dr,{}),`GitHub`]})]})]})});function Xi(){return(0,P.jsxs)(P.Fragment,{children:[(0,P.jsx)(hi,{}),(0,P.jsx)(Ui,{}),(0,P.jsx)(Yr,{}),(0,P.jsx)(si,{}),(0,P.jsx)(Pi,{}),(0,P.jsx)(bi,{}),(0,P.jsx)(Yi,{})]})}var Zi=qn`
+`,Yi=()=>(0,P.jsx)(Xn,{id:`contact`,children:(0,P.jsxs)(Wi,{children:[(0,P.jsx)(Hr,{children:`Let's Connect`}),(0,P.jsx)(Gi,{children:`I'm always interested in discussing new opportunities, interesting projects, and challenging engineering problems.`}),(0,P.jsxs)(Ki,{children:[(0,P.jsxs)(qi,{href:`mailto:vinigonzalez1993@gmail.com`,children:[(0,P.jsx)(pr,{}),` Email Me`]}),(0,P.jsxs)(Ji,{href:`https://www.linkedin.com/in/vin%C3%ADcius-gonzalez-caetano-06943044/`,target:`_blank`,rel:`noreferrer`,children:[(0,P.jsx)(ur,{}),`LinkedIn`]}),(0,P.jsxs)(Ji,{href:`https://github.com/vinigonz1993`,target:`_blank`,rel:`noreferrer`,children:[(0,P.jsx)(dr,{}),`GitHub`]})]})]})});function Xi(){return(0,P.jsxs)(P.Fragment,{children:[(0,P.jsx)(hi,{}),(0,P.jsxs)(`main`,{children:[(0,P.jsx)(Ui,{}),(0,P.jsx)(Yr,{}),(0,P.jsx)(si,{}),(0,P.jsx)(Pi,{}),(0,P.jsx)(bi,{}),(0,P.jsx)(Yi,{})]})]})}var Zi=qn`
 
 * {
   margin: 0;
