@@ -2,7 +2,7 @@ import vpslensImage from "../assets/vpslens.png";
 import tracevaultImage from "../assets/tracevault.png";
 import mindtestImage from "../assets/mindtest.png";
 import seahorseImage from "../assets/seahorse.png";
-import shrinkPdfImage from "../assets/shrinkpdf.png";
+import mochaImage from "../assets/mocha.png";
 
 export interface Project {
   name: string;
@@ -72,16 +72,16 @@ export const projects: Project[] = [
     url: null
   },
   {
-    name: "Shrink-pdf",
+    name: "Mocha PDF",
     description:
-      "Shrink-pdf is a lightweight tool for compressing PDF files, optimizing file size while maintaining document quality. It provides a simple web interface for uploading, processing, and downloading compressed PDFs efficiently.",
+      "Mocha PDF is a lightweight tool for compressing PDF files, optimizing file size while maintaining document quality. It provides a simple web interface for uploading, processing, and downloading compressed PDFs efficiently.",
     technologies: [
       "TypeScript",
       "Node.js",
       "React",
     ],
-    image: shrinkPdfImage,
-    url: "https://shrink-pdf.vgonzalez.dev"
+    image: mochaImage,
+    url: "https://mocha.vgonzalez.dev"
   },
   {
     name: "VPSLens",
